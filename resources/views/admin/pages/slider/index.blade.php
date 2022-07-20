@@ -28,7 +28,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-left mb-3">
-                            <a href="{{route('slider.create')}}" type="submit" class="btn btn-success"><i class="fas fa-plus mr-1"></i>Create New</a>
+                            <a href="{{route('slider.create')}}" type="submit" class="btn btn-outline-success"><i class="fas fa-plus mr-1"></i>Create New</a>
                         </div>
                         <div class="card">
                             <!--Alert message-->
@@ -66,8 +66,6 @@
                                                      height="40">
                                             </td>
                                             <td>{{ $sl->link }}</td>
-{{--                                            <td>{{ $sl->created_at }}</td>--}}
-{{--                                            <td>{{ $sl->updated_at }}</td>--}}
                                             <td>
                                                 <form action="{{ route('slider.destroy',$sl->id) }}" method="Post">
                                                     <a class="btn btn-outline-success" href="{{ route('slider.edit',$sl->id) }}"><i class="fas fa-edit"></i></a>

@@ -56,6 +56,7 @@
 
     <!-- Right navbar links -->
     <ul class="navbar-nav ml-auto">
+
       <!-- Navbar Search -->
       <li class="nav-item">
         <a class="nav-link" data-widget="navbar-search" href="#" role="button">
@@ -77,9 +78,15 @@
           </form>
         </div>
       </li>
-
+      {{-- logout form --}}
+      <form action="{{ route('logout') }}" method="POST">
+        @csrf
+        <button type="submit text-center mt-2">
+            <i class="fa fa-power-off"></i>
+        </button>
+    </form>
       <!-- Messages Dropdown Menu -->
-      <li class="nav-item dropdown">
+      {{-- <li class="nav-item dropdown">
         <a class="nav-link" data-toggle="dropdown" href="#">
           <i class="far fa-comments"></i>
           <span class="badge badge-danger navbar-badge">3</span>
@@ -172,7 +179,7 @@
         <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
           <i class="fas fa-th-large"></i>
         </a>
-      </li>
+      </li> --}}
     </ul>
   </nav>
   <!-- /.navbar -->

@@ -29,9 +29,9 @@
                     <div class="col-md-12">
                         <!-- general form elements -->
                         <div class="text-left mb-3">
-                            <a href="{{route('slider.index')}}" type="submit" class="btn btn-success">All Slider</a>
+                            <a href="{{route('slider.index')}}" type="submit" class="btn btn-outline-warning">All Slider</a>
                         </div>
-                        <div class="card card-success">
+                        <div class="card">
                             <div class="card-header">
                                 <h3 class="card-title">Slider</h3>
                             </div>
